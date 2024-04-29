@@ -1,0 +1,46 @@
+
+object weapon_unarmed : weapon_base
+{
+	float		side;
+
+	void		init();	
+
+	void		Lower();
+	void		Raise();
+	void		Idle();
+	void		Fire();
+	void		ExitCinematic();
+	string		GetFireAnim();
+};
+
+void weapon_unarmed::init()
+{
+}
+
+void weapon_unarmed::Raise()
+{
+}
+
+void weapon_unarmed::Lower()
+{
+}
+
+void weapon_unarmed::Idle()
+{
+}
+
+void weapon_unarmed::Fire()
+{
+	do
+	{
+		melee();
+	} while ( WEAPON_ATTACK || WEAPON_NETFIRING );
+}
+
+void weapon_unarmed::ExitCinematic()
+{
+}
+
+string weapon_unarmed::GetFireAnim()
+{
+}

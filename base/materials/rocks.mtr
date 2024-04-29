@@ -1,0 +1,7 @@
+textures/rocks/rock_smooth
+{
+	qer_editorimage textures/rocks/rock_smooth_editorimage
+	diffusemap textures/rocks/rock_smooth_d
+	specularmap textures/rocks/rock_smooth_rmao
+	normalmap textures/rocks/rock_smooth_n
+}

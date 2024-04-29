@@ -1,0 +1,4 @@
+model view_pipe
+{
+	mesh	"models/weapons/pipe/weapon_pipe.glb"
+}

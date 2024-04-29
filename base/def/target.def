@@ -1,22 +1,10 @@
 
-/***********************************************************************
 
- target
+//Target Entities
 
-***********************************************************************/
-entityDef target_checkpoint {
-	"editor_color"			"1 1 0"
-	"editor_mins"			"-8 -8 -8"
-	"editor_maxs"			"8 8 8"
 
-	"editor_usage"				"Trigger this to trigger a trigger an upcoming map. It will be triggered when the player spawns"
-	"editor_var levelName"		"level name to fire trigger in, this is the map name minus the path, i.e. admin"
-	"editor_var triggerName"	"trigger name to fire"
-
-	"spawnclass"			"idTarget_Checkpoint"
-}
-
-entityDef target_endLevel {
+entityDef target_endLevel
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -30,7 +18,8 @@ entityDef target_endLevel {
 	"nextMap"				"guis/EndLevel.gui"
 }
 
-entityDef target_sessionCommand {
+entityDef target_sessionCommand
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -41,7 +30,8 @@ entityDef target_sessionCommand {
 	"spawnclass"			"idTarget_SessionCommand"
 }
 
-entityDef target_setshaderparm {
+entityDef target_setshaderparm
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -62,7 +52,8 @@ entityDef target_setshaderparm {
 	"spawnclass"			"idTarget_SetShaderParm"
 }
 
-entityDef target_setshadertime {
+entityDef target_setshadertime
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -72,7 +63,8 @@ entityDef target_setshadertime {
 	"spawnclass"			"idTarget_SetShaderTime"
 }
 
-entityDef target_setglobalparmtime {
+entityDef target_setglobalparmtime
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -83,7 +75,8 @@ entityDef target_setglobalparmtime {
 	"spawnclass"			"idTarget_SetGlobalShaderTime"
 }
 
-entityDef target_entity_setcolor {
+entityDef target_entity_setcolor
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -96,7 +89,8 @@ entityDef target_entity_setcolor {
 	"fadeTime"				"0"
 }
 
-entityDef target_entity_fadeout {
+entityDef target_entity_fadeout
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -112,7 +106,8 @@ entityDef target_entity_fadeout {
 	"fadeTime"				"1"
 }
 
-entityDef target_entity_fadein {
+entityDef target_entity_fadein
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -128,7 +123,8 @@ entityDef target_entity_fadein {
 	"fadeTime"				"1"
 }
 
-entityDef target_light_fadeout {
+entityDef target_light_fadeout
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -142,7 +138,8 @@ entityDef target_light_fadeout {
 	"fadeTime"				"1"
 }
 
-entityDef target_light_fadein {
+entityDef target_light_fadein
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -156,7 +153,8 @@ entityDef target_light_fadein {
 	"fadeTime"				"1"
 }
 
-entityDef target_null {
+entityDef target_null
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-6 -6 -6"
 	"editor_maxs"			"6 6 6"
@@ -165,7 +163,8 @@ entityDef target_null {
 	"spawnclass"			"idTarget"
 }
 
-entityDef target_give {
+entityDef target_give
+{
 	"editor_color"			"0.2 0.7 0.5"
 	"editor_mins"			"-6 -6 -6"
 	"editor_maxs"			"6 6 6"
@@ -181,7 +180,8 @@ entityDef target_give {
 }
 
 
-entityDef target_setmodel {
+entityDef target_setmodel
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -192,7 +192,8 @@ entityDef target_setmodel {
 	"spawnclass"			"idTarget_SetModel"
 }
 
-entityDef target_setinfluence {
+entityDef target_setinfluence
+{
 	"editor_color"					"1 1 0"
 	"editor_mins"					"-8 -8 -8"
 	"editor_maxs"					"8 8 8"
@@ -230,7 +231,8 @@ entityDef target_setinfluence {
 	"spawnclass"					"idTarget_SetInfluence"
 }
 
-entityDef target_setkeyval {
+entityDef target_setkeyval
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -243,7 +245,8 @@ entityDef target_setkeyval {
 	"spawnclass"			"idTarget_SetKeyVal"
 }
 
-entityDef target_setfov {
+entityDef target_setfov
+{
 	"editor_color"			"1 0 1"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -255,7 +258,8 @@ entityDef target_setfov {
 	"spawnclass"			"idTarget_SetFov"
 }
 
-entityDef target_primaryobjective {
+entityDef target_primaryobjective
+{
 	"editor_color"			"1 0 1"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -266,7 +270,8 @@ entityDef target_primaryobjective {
 	"spawnclass"			"idTarget_SetPrimaryObjective"
 }
 
-entityDef target_show {
+entityDef target_show
+{
 	"editor_color"			"1 0 1"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -276,7 +281,8 @@ entityDef target_show {
 	"spawnclass"			"idTarget_Show"
 }
 
-entityDef target_lock {
+entityDef target_lock
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -288,7 +294,8 @@ entityDef target_lock {
 	"spawnclass"			"idTarget_LockDoor"
 }
 
-entityDef target_enableweapons {
+entityDef target_enableweapons
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -301,7 +308,8 @@ entityDef target_enableweapons {
 	"weapon"				"weapon_pistol"
 }
 
-entityDef target_removeweapons {
+entityDef target_removeweapons
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -312,7 +320,8 @@ entityDef target_removeweapons {
 	"spawnclass"			"idTarget_RemoveWeapons"
 }
 
-entityDef target_levelTrigger {
+entityDef target_levelTrigger
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -324,7 +333,8 @@ entityDef target_levelTrigger {
 	"spawnclass"			"idTarget_LevelTrigger"
 }
 
-entityDef target_enableStamina {
+entityDef target_enableStamina
+{
 	"editor_color"			"1 0 1"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -336,7 +346,8 @@ entityDef target_enableStamina {
 }
 
 
-entityDef target_giveemail {
+entityDef target_giveemail
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -347,7 +358,8 @@ entityDef target_giveemail {
 	"spawnclass"			"idTarget_GiveEmail"
 }
 
-entityDef target_givesecurity {
+entityDef target_givesecurity
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -359,7 +371,8 @@ entityDef target_givesecurity {
 	"spawnclass"			"idTarget_GiveSecurity"
 }
 
-entityDef target_tip {
+entityDef target_tip
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -371,7 +384,8 @@ entityDef target_tip {
 	"text_title"			"#str_02907"
 }
 
-entityDef target_callobjectfunction {
+entityDef target_callobjectfunction
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -383,7 +397,8 @@ entityDef target_callobjectfunction {
 	"spawnclass"			"idTarget_CallObjectFunction"
 }
 
-entityDef target_npc_talk {
+entityDef target_npc_talk
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -394,7 +409,8 @@ entityDef target_npc_talk {
 	"call"					"target_talk"
 }
 
-entityDef target_npc_talk_triggered {
+entityDef target_npc_talk_triggered
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -405,7 +421,8 @@ entityDef target_npc_talk_triggered {
 	"call"					"say_triggered"
 }
 
-entityDef target_npc_talk_primary {
+entityDef target_npc_talk_primary
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -416,7 +433,8 @@ entityDef target_npc_talk_primary {
 	"call"					"say_primary"
 }
 
-entityDef target_npc_talk_secondary {
+entityDef target_npc_talk_secondary
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -427,7 +445,8 @@ entityDef target_npc_talk_secondary {
 	"call"					"say_secondary"
 }
 
-entityDef target_ai_followalternatepath1 {
+entityDef target_ai_followalternatepath1
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -437,7 +456,8 @@ entityDef target_ai_followalternatepath1 {
 	"call"					"follow_alternate_path1"
 }
 
-entityDef target_ai_followalternatepath2 {
+entityDef target_ai_followalternatepath2
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -447,7 +467,8 @@ entityDef target_ai_followalternatepath2 {
 	"call"					"follow_alternate_path2"
 }
 
-entityDef target_ai_followalternatepath3 {
+entityDef target_ai_followalternatepath3
+{
 	"editor_color"			"1 1 0"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -457,7 +478,8 @@ entityDef target_ai_followalternatepath3 {
 	"call"					"follow_alternate_path3"
 }
 
-entityDef target_FadeSoundClass {
+entityDef target_FadeSoundClass
+{
 	"editor_color"			"0.1 1 0.1"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -476,18 +498,4 @@ entityDef target_FadeSoundClass {
 	"fadeClass"				"0"
 	"fadeTime"				"0.5"
 	"fadeDB"				"20"
-}
-
-entityDef target_rumble_joystick {
-	"editor_color"				"1 1 0"
-	"editor_mins"				"-8 -8 -8"
-	"editor_maxs"				"8 8 8"
-
-	"editor_usage"				"Trigger this to activate a rumbling on the controller."
-	"editor_var low_magnitude"	"Low rumble magnitude 0.0 - 1.0"
-	"editor_var low_duration"	"Low rumble duration in MS"
-	"editor_var high_magnitude"	"High rumble magnitude 0.0 - 1.0"
-	"editor_var high_duration"	"High rumble duration in MS"
-
-	"spawnclass"				"idTarget_RumbleJoystick"
 }

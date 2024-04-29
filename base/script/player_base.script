@@ -1,0 +1,91 @@
+object player : player_base
+{
+
+	boolean		weapon_changed;
+	boolean		start_fire;
+	
+	void		init();
+
+	void		EnterCinematic();
+	void		ExitCinematic();
+	void		LowerWeapon();
+	void		RaiseWeapon();
+	void		ReloadWeapon();
+	void		NetCatchup();
+
+	void		Torso_Idle();
+
+	//anim states required by the game Code
+	void		Torso_Death();
+	void		Legs_Death();
+};
+
+//Method: player::init
+
+void player::init()
+{
+	weapon_changed = false;
+	start_fire = false;
+
+	animState( ANIMCHANNEL_TORSO, "Torso_Idle", 0 );
+}
+
+
+void player::EnterCinematic()
+{
+
+}
+
+
+void player::ExitCinematic()
+{
+
+}
+
+
+void player::LowerWeapon()
+{
+
+}
+
+
+void player::RaiseWeapon()
+{
+	getWeaponEntity();
+}
+
+
+void player::ReloadWeapon()
+{
+
+}
+
+
+void player::NetCatchup()
+{
+	getWeaponEntity();
+}
+
+
+//ANIMATIONS Control
+
+void player::Torso_Idle()
+{
+	playCycle( ANIMCHANNEL_TORSO, "idle" );
+}
+
+
+void player::Torso_Death()
+{
+   playAnim( ANIMCHANNEL_TORSO, "death" );
+
+   while( !animDone( ANIMCHANNEL_TORSO, 0 ) )
+   {
+      waitFrame();
+   }   
+}
+
+void player::Legs_Death()
+{
+
+}

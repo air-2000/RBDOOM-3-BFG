@@ -1,0 +1,35 @@
+models/pillars/pillar01
+{
+	diffusemap	models/pillars/pillar01
+	specularmap	models/pillars/pillar01_rmao
+	normalmap	models/pillars/pillar01_n
+}
+
+models/pillars/pillar_broken01
+{
+	diffusemap	models/pillars/pillar_broken01
+	specularmap	models/pillars/pillar_broken01_rmao
+	normalmap	models/pillars/pillar_broken01_n
+}
+
+models/pillars/pillar_broken02
+{
+	diffusemap	models/pillars/pillar_broken02
+	specularmap	models/pillars/pillar_broken02_rmao
+	normalmap	models/pillars/pillar_broken02_n
+}
+
+models/pillars/pillar_broken03
+{
+	diffusemap	models/pillars/pillar_broken03
+	specularmap	models/pillars/pillar_broken03_rmao
+	normalmap	models/pillars/pillar_broken03_n
+}
+
+
+models/pillars/pillar_base01
+{
+	diffusemap	models/pillars/pillar_base01
+	specularmap	models/pillars/pillar_base01_rmao
+	normalmap	models/pillars/pillar_base01_n
+}

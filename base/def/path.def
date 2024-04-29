@@ -1,10 +1,9 @@
-/***********************************************************************
 
- path
 
-***********************************************************************/
+//Path Entities
 
-entityDef path_default {
+entityDef path_default
+{
 	"editor_color"			".7 .3 1"
 	"editor_mins"			"-8 -8 -8"
 	"editor_maxs"			"8 8 8"
@@ -18,14 +17,16 @@ entityDef path_default {
 	"spawnclass"			"idPathCorner"
 }
 
-entityDef path_corner {
+entityDef path_corner
+{
 	"inherit"				"path_default"
 	"editor_usage"			"Character will walk to this entity"
 	"editor_mins"			"-24 -24 0"
 	"editor_maxs"			"24 24 82"
 }
 
-entityDef path_anim {
+entityDef path_anim
+{
 	"inherit"				"path_default"
 	"editor_showangle"		"1"
 	"editor_rotatable"		"1"
@@ -40,7 +41,8 @@ entityDef path_anim {
 	"blend_out"				"4"
 }
 
-entityDef path_cycleanim {
+entityDef path_cycleanim
+{
 	"inherit"				"path_default"
 	"editor_showangle"		"1"
 	"editor_rotatable"		"1"
@@ -54,7 +56,8 @@ entityDef path_cycleanim {
 	"blend_out"				"4"
 }
 
-entityDef path_turn {
+entityDef path_turn
+{
 	"inherit"				"path_default"
 	"editor_showangle"		"1"
 	"editor_rotatable"		"1"
@@ -62,7 +65,8 @@ entityDef path_turn {
 	"editor_usage"			"Character will turn to the direction specified in entity."
 }
 
-entityDef path_wait {
+entityDef path_wait
+{
 	"inherit"				"path_default"
 
 	"editor_usage"			"Character will wait specified amount of time before continuing on path."
@@ -71,12 +75,14 @@ entityDef path_wait {
 	"wait"					"2"
 }
 
-entityDef path_waitfortrigger {
+entityDef path_waitfortrigger
+{
 	"inherit"				"path_default"
 	"editor_usage"			"Character will wait until they're triggered again before continuing on path."
 }
 
-entityDef path_conversation {
+entityDef path_conversation
+{
 	"inherit"				"path_default"
 	"editor_usage"			"Conversation node.  Character speaks a line of dialog and looks at a specific entity.  When talked to, conversation will end for all characters listening to conversation and they'll begin following path entities after all conversation nodes.  When finished, character will tell all listening characters to go to their next conversation node."
 	"editor_snd snd_dialog"	"Name of sound shader to play."
@@ -89,7 +95,8 @@ entityDef path_conversation {
 	"blend_out"				"4"
 }
 
-entityDef path_conversation_listen {
+entityDef path_conversation_listen
+{
 	"inherit"				"path_default"
 	"editor_usage"			"Conversation node.  Character listens to entity 'focus' and waits for him to finish."
 	"editor_var anim"		"Name of animation to play while speaker talks."
@@ -102,7 +109,8 @@ entityDef path_conversation_listen {
 	"blend_out"				"4"
 }
 
-entityDef path_lookat {
+entityDef path_lookat
+{
 	"inherit"				"path_default"
 	"editor_usage"			"Causes character to look at an entity for a certain length of time or until triggered."
 	"editor_var anim"		"Name of animation to play."
@@ -116,7 +124,8 @@ entityDef path_lookat {
 
 }
 
-entityDef path_hide {
+entityDef path_hide
+{
 	"inherit"				"path_default"
 	"editor_showangle"		"1"
 	"editor_rotatable"		"1"
@@ -124,7 +133,8 @@ entityDef path_hide {
 	"editor_usage"			"Makes the character invisible and non-solid."
 }
 
-entityDef path_show {
+entityDef path_show
+{
 	"inherit"				"path_default"
 	"editor_showangle"		"1"
 	"editor_rotatable"		"1"
@@ -132,7 +142,8 @@ entityDef path_show {
 	"editor_usage"			"Makes the character visible and solid."
 }
 
-entityDef path_jump {
+entityDef path_jump
+{
 	"inherit"				"path_default"
 
 	"editor_usage"			"Character will jump to the next path entity (regardless of type).  Will cause error if character doesn't have jumping ability.  If jump is failing, you can manually specify velocity of the jump using 'up' and 'forward'."
@@ -140,14 +151,16 @@ entityDef path_jump {
 	"editor_var forward"	"How much forward velocity the monster will jump with."
 }
 
-entityDef path_attack {
+entityDef path_attack
+{
 	"inherit"				"path_default"
 
 	"editor_usage"			"Character will attack the character specified by 'enemy' key.  Character will go to next path when enemy dies or when activated."
 	"editor_var enemy"		"Character to attack."
 }
 
-entityDef path_headanim {
+entityDef path_headanim
+{
 	"inherit"				"path_default"
 	"editor_usage"			"starts playing an animation on the head immediately goes to next path.  used for playing talk anims while walking."
 	"editor_var anim"		"Name of animation to play."
@@ -159,39 +172,43 @@ entityDef path_headanim {
 
 }
 
-entityDef path_waitforheadanim {
+entityDef path_waitforheadanim
+{
 	"inherit"				"path_default"
 	"editor_usage"			"waits for animation on the head from path_headanim finish."
 	"editor_var focus"		"Name of entity to look at."	
 }
 
-entityDef path_talk {
+entityDef path_talk
+{
 	"inherit"				"path_default"
 	"editor_usage"			"forces character to talk to the player"
 }
 
-entityDef path_talk_triggered {
+entityDef path_talk_triggered
+{
 	"inherit"				"path_default"
 	"editor_usage"			"forces character to say his triggered talk anim to the player"
 }
 
-entityDef path_talk_primary {
+entityDef path_talk_primary
+{
 	"inherit"				"path_default"
 	"editor_usage"			"forces character to say his primary talk anim to the player"
 }
 
-entityDef path_talk_secondary {
+entityDef path_talk_secondary
+{
 	"inherit"				"path_default"
 	"editor_usage"			"forces character to say his secondary talk anim to the player"
 }
 
-/***********************************************************************
 
- combat nodes
+//Combat Nodes
 
-***********************************************************************/
 
-entityDef ai_attackcone {
+entityDef ai_attackcone
+{
 	"editor_color"			".5 .3  0"
 	"editor_mins"			"-24 -24 0"
 	"editor_maxs"			"24 24 82"
@@ -229,7 +246,8 @@ entityDef ai_attackcone {
 	"height"				"256"	
 }
 
-entityDef ai_attackcone_once {
+entityDef ai_attackcone_once
+{
 	"editor_color"			".5 .3  0"
 	"editor_mins"			"-24 -24 0"
 	"editor_maxs"			"24 24 82"
@@ -268,7 +286,8 @@ entityDef ai_attackcone_once {
 	"height"				"256"
 }
 
-entityDef ai_attackcone_turret {
+entityDef ai_attackcone_turret
+{
 	"editor_color"			".5 .3  0"
 	"editor_mins"			"-24 -24 0"
 	"editor_maxs"			"24 24 82"
@@ -305,7 +324,8 @@ entityDef ai_attackcone_turret {
 	"height"				"256"
 }
 
-entityDef ai_lostcombat {
+entityDef ai_lostcombat
+{
 	"editor_color"			".5 .3  0"
 	"editor_mins"			"-24 -24 0"
 	"editor_maxs"			"24 24 82"

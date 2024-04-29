@@ -1,0 +1,44 @@
+textures/dev/128tex
+{
+	qer_editorimage textures/dev/128tex
+	diffusemap textures/dev/128tex
+	specularmap textures/dev/dev_s
+	bumpmap textures/dev/dev_n
+}
+
+textures/dev/64tex
+{
+	qer_editorimage textures/dev/64tex
+	diffusemap textures/dev/64tex
+	specularmap textures/dev/dev_s
+	bumpmap textures/dev/dev_n
+}
+
+textures/dev/32tex
+{
+	qer_editorimage textures/dev/32tex
+	diffusemap textures/dev/32tex
+	specularmap textures/dev/dev_s
+	bumpmap textures/dev/dev_n
+}
+
+textures/dev/dev256
+{
+	qer_editorimage textures/dev/dev256_editorimage
+	diffusemap textures/dev/dev256
+	specularmap textures/dev/dev256_rmao
+}
+
+textures/dev/iron_smooth
+{
+	qer_editorimage textures/dev/iron_smooth_editorimage
+	diffusemap textures/dev/iron_smooth
+	specularmap textures/dev/iron_smooth_rmao
+}
+
+textures/dev/bricktest
+{
+	diffusemap	textures/dev/bricktest
+	bumpmap	textures/dev/bricktest_n
+	rmaomap	textures/dev/bricktest_rmao
+}

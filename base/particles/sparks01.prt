@@ -1,0 +1,27 @@
+particle sparks01
+{ 
+	{
+		count 				100
+		material 			textures/particles/spark01
+		time 				1.200
+		cycles 				0.000
+		timeOffset 			0.000
+		bunching 			1.000
+		distribution 		rect 24.000 24.000 24.000
+		direction 			cone 90.000
+		orientation 		view
+		speed 				"12.000" to "24.000"
+		size 				"1.500" to "0.000"
+		aspect 				"1.000"
+		rotation 			"0.000" to "4.000"
+		randomDistribution 	1
+		boundsExpansion 	0.000
+		fadeIn 				1.000
+		fadeOut 			1.000
+		fadeIndex 			0.000
+		color 				1.000 1.000 1.000 1.000
+		fadeColor 			0.000 0.000 0.000 0.000
+		offset 				0.000 0.000 0.000
+		gravity 			-24.000
+	}
+}

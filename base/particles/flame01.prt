@@ -1,0 +1,75 @@
+particle flame01
+{ 
+	{
+		count 				26
+		material 			textures/particles/flame01
+		time 				1.400
+		cycles 				0.000
+		timeOffset 			0.000
+		bunching 			0.950
+		distribution 		rect 0.000 0.000 0.000
+		direction 			cone 50.000
+		orientation 		view
+		speed 				"4.500" to "0.000"
+		size 				"10.500" to "8.000"
+		aspect 				"1.000" to "2.000"
+		rotation 			"0.000"
+		randomDistribution 	1
+		boundsExpansion 	0.000
+		fadeIn 				0.000
+		fadeOut 			1.000
+		fadeIndex 			0.000
+		color 				1.000 1.000 1.000 1.000
+		fadeColor 			0.000 0.000 0.000 0.000
+		offset 				0.000 0.000 0.000
+		gravity 			world -20.000
+	}
+	{
+		count 				20
+		material 			textures/particles/smoke01
+		time 				2.700
+		cycles 				0.000
+		timeOffset 			0.000
+		bunching 			1.000
+		distribution 		rect 1.800 1.800 1.200
+		direction 			cone 90.000
+		orientation 		view
+		speed 				"0.000"
+		size 				"14.500" to "20.500"
+		aspect 				"1.000"
+		rotation 			"0.000"
+		randomDistribution 	1
+		boundsExpansion 	0.000
+		fadeIn 				0.750
+		fadeOut 			0.250
+		fadeIndex 			0.000
+		color 				0.040 0.040 0.040 1.000
+		fadeColor 			0.000 0.000 0.000 0.000
+		offset 				0.000 0.000 0.000
+		gravity 			world -6.000
+	}
+	{
+		count 				4
+		material 			textures/particles/spark01
+		time 				2.000
+		cycles 				0.000
+		timeOffset 			0.000
+		bunching 			0.000
+		distribution 		rect 0.600 0.600 0.600
+		direction 			outward 0.400
+		orientation 		view
+		speed 				"0.000" to "25.000"
+		size 				"4.500" to "0.000"
+		aspect 				"1.000"
+		rotation 			"0.000" to "12.000"
+		randomDistribution 	1
+		boundsExpansion 	0.000
+		fadeIn 				0.000
+		fadeOut 			0.950
+		fadeIndex 			0.000
+		color 				1.000 1.000 1.000 1.000
+		fadeColor 			0.000 0.000 0.000 0.000
+		offset 				0.000 0.000 0.000
+		gravity 			-20.000
+	}
+}

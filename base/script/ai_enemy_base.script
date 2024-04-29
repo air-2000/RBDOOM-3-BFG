@@ -1,0 +1,164 @@
+/*
+================
+Enemy Base Class
+================
+*/
+
+#define ATTACK_MELEE			1
+
+object enemy_base : ai
+{
+	//AI states and methods
+	void		init();
+
+	void		state_Idle();
+	void		state_Killed();
+	void		state_Start();
+	void		state_Excited();
+	void		wait_for_foe();
+	float		analyzeAttackChances();
+	boolean		chase_foe();
+	void		actionAttack( float attackFlags );
+};
+
+void enemy_base::init()
+{
+
+}
+
+
+void enemy_base::state_Killed()
+{
+	stopMove();
+
+	animState( ANIMCHANNEL_TORSO, "Torso_Death", 0 );
+
+	waitAction( "dead" );
+	sys.wait(2);
+	remove();
+}
+
+
+void enemy_base::state_Start()
+{
+
+	float attackFlags;
+
+	eachFrame
+	{
+		attackFlags = analyzeAttackChances();
+
+		if (attackFlags)
+		{
+			actionAttack( attackFlags );
+		}
+		//Trying to chase the enemy.
+		if (!chase_foe())
+		{
+			locateEnemy();
+			if (!chase_foe())
+			{
+				setState( "state_Excited" );
+			}
+		}
+		waitFrame();
+	}
+}
+
+
+void enemy_base::state_Excited()
+{
+
+	eachFrame
+	{
+
+		if (!AI_ENEMY_VISIBLE)
+		{
+			clearEnemy();
+			setState( "state_Idle" );
+		}
+
+		//Other stuff you should do...
+		waitFrame();
+	}
+}
+
+
+void enemy_base::state_Idle()
+{
+
+}
+
+
+void enemy_base::actionAttack( float attackFlags )
+{
+
+}
+
+
+void enemy_base::wait_for_foe()
+{
+	stopMove();
+
+	while(!getEnemy())
+	{
+		entity enemy;
+		enemy = findEnemy( false );
+		if ( !enemy )
+		{
+			enemy = heardSound( true );
+			if ( enemy )
+			{
+				setEnemy( enemy );
+			}
+		}
+		else
+		{
+			setEnemy( enemy );
+		}
+		waitFrame();
+	}
+
+	//start chasing
+	return;
+}
+
+
+boolean enemy_base::chase_foe()
+{
+
+	float attackFlags;
+
+	moveToEnemy();
+	if (AI_MOVE_DONE)
+	{
+		return false;
+	}
+	waitFrame();
+
+	while( !AI_MOVE_DONE && !AI_DEST_UNREACHABLE )
+	{
+		attackFlags = analyzeAttackChances();
+		if (attackFlags)
+		{
+			actionAttack( attackFlags );
+
+			return true;
+		}
+
+		waitFrame();
+	}
+
+	if (AI_DEST_UNREACHABLE )
+	{
+		return false;
+	}
+
+	return true;
+}
+
+
+float enemy_base::analyzeAttackChances()
+{
+	return 0;
+}

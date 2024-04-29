@@ -1,0 +1,102 @@
+//Player view materials required by PlayerView.cpp
+
+
+//textures/decals/tunnel
+// parm3 will range from 0.0 to 1.0 based on health, 1.0 is full //health
+// parm0 will be the time that damage was last taken, allowing an
+// accentuation and fade out
+
+table visionSolidAlpha { clamp { 1, 0 } }
+
+textures/decals/tunnel
+{
+	noshadows
+	translucent
+
+	qer_editorimage		 textures/decals/defaultDamage.tga
+
+	{
+		alpha		visionSolidAlpha[ parm3 ] - (time-parm0)*0.25
+	    blend		blend
+		map     textures/decals/defaultDamage.tga
+		clamp
+	}
+
+	{
+		alpha		visionSolidAlpha[ parm3 ] - (time-parm0)*0.25
+	    blend		blend
+		map     textures/decals/defaultDamage.tga
+		clamp
+	}
+}
+
+armorViewEffect
+{
+	noshadows
+	translucent
+	{
+		alpha 0.1
+      	blend gl_dst_color,gl_zero
+		map    textures/decals/defaultDamage.tga
+		colored
+	}
+}
+
+textures/decals/berserk
+{
+	noshadows
+	translucent
+	{
+      	blend gl_dst_color,gl_zero
+		map    textures/decals/defaultDamage.tga
+		colored
+	}
+}
+
+
+textures/decals/irblend
+{
+	noshadows
+	translucent
+	{
+		alpha 0.1
+      	blend gl_dst_color,gl_zero
+		map    textures/decals/defaultDamage.tga
+		colored
+	}
+}
+
+textures/decals/bloodspray
+{
+	noshadows
+	translucent
+	{
+		alpha 0.1
+      	blend gl_dst_color,gl_zero
+		map    textures/decals/defaultDamage.tga
+		colored
+	}
+}
+
+textures/decals/bfgvision
+{
+	noshadows
+	translucent
+	{
+		alpha 0.1
+      	blend gl_dst_color,gl_zero
+		map    textures/decals/defaultDamage.tga
+		colored
+	}
+}
+
+_emptyname
+{
+	noshadows
+	translucent
+	{
+      	blend gl_dst_color,gl_zero
+		map    textures/decals/defaultDamage.tga
+		colored
+	}
+}

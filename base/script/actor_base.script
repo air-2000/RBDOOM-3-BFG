@@ -1,0 +1,117 @@
+// Move types.
+#define MOVE_TYPE_DEAD			0
+#define MOVE_TYPE_ANIM			1
+#define MOVE_TYPE_SLIDE			2
+#define MOVE_TYPE_FLY			3
+#define MOVE_TYPE_STATIC		4
+
+// Move states.
+#define MOVE_STATUS_DONE				0
+#define MOVE_STATUS_MOVING				1
+#define MOVE_STATUS_WAITING				2
+#define MOVE_STATUS_DEST_NOT_FOUND		3
+#define MOVE_STATUS_DEST_UNREACHABLE	4
+#define MOVE_STATUS_BLOCKED_BY_WALL		5
+#define MOVE_STATUS_BLOCKED_BY_OBJECT	6
+#define MOVE_STATUS_BLOCKED_BY_ENEMY	7
+#define MOVE_STATUS_BLOCKED_BY_MONSTER	8
+
+// Talk states.
+#define TALK_NEVER						0
+#define TALK_DEAD						1
+#define TALK_OK							2
+#define TALK_BUSY						3
+
+
+//AI object.
+
+object ai
+{
+	boolean		AI_TALK;
+	boolean		AI_DAMAGE;
+	boolean		AI_PAIN;
+	float		AI_SPECIAL_DAMAGE;
+	boolean		AI_DEAD;
+	boolean		AI_ENEMY_VISIBLE;
+	boolean		AI_ENEMY_IN_FOV;
+	boolean		AI_ENEMY_DEAD;
+	boolean		AI_MOVE_DONE;
+	boolean		AI_ONGROUND;
+	boolean		AI_ACTIVATED;
+	boolean		AI_FORWARD;
+	boolean		AI_JUMP;
+	boolean		AI_DEST_UNREACHABLE;
+	boolean		AI_BLOCKED;
+	boolean		AI_HIT_ENEMY;
+	boolean		AI_OBSTACLE_IN_PATH;
+	boolean		AI_PUSHED;
+};
+
+
+//Player object.
+
+object player_base
+{
+	boolean		AI_FORWARD;
+	boolean		AI_BACKWARD;
+	boolean		AI_STRAFE_LEFT;
+	boolean		AI_STRAFE_RIGHT;
+	boolean		AI_ATTACK_HELD;
+	boolean		AI_WEAPON_FIRED;
+	boolean		AI_JUMP;
+	boolean		AI_DEAD;
+	boolean		AI_CROUCH;
+	boolean		AI_ONGROUND;
+	boolean		AI_ONLADDER;
+	boolean		AI_RUN;
+	boolean		AI_HARDLANDING;
+	boolean		AI_SOFTLANDING;
+	boolean		AI_RELOAD;
+	boolean		AI_PAIN;
+	boolean		AI_TELEPORT;
+	boolean		AI_TURN_LEFT;
+	boolean		AI_TURN_RIGHT;
+	
+	void		EnterCinematic();
+	void		ExitCinematic();
+	void		LowerWeapon();
+	void		RaiseWeapon();
+	void		ReloadWeapon();
+	void		NetCatchup();
+};
+
+
+void player_base::EnterCinematic()
+{
+
+}
+
+
+void player_base::ExitCinematic()
+{
+
+}
+
+
+void player_base::LowerWeapon()
+{
+
+}
+
+
+void player_base::RaiseWeapon()
+{
+
+}
+
+
+void player_base::ReloadWeapon()
+{
+
+}
+
+
+void player_base::NetCatchup()
+{
+
+}

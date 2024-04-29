@@ -1,0 +1,11 @@
+models/weapons/pipe/pipe
+{
+	diffusemap	models/weapons/pipe/pipe_d
+	rmaomap models/weapons/pipe/pipe_rmao
+}
+
+models/weapons/pipe/hands
+{
+	diffusemap models/weapons/pipe/hands_d
+	rmaomap models/weapons/pipe/hands_rmao
+}

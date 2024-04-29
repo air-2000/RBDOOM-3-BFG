@@ -1,0 +1,31 @@
+textures/sky/skytest_tx
+{
+	qer_editorimage textures/sky/skytest_tx
+	noFragment
+	noshadows
+	nooverlays
+	noimpact
+	forceOpaque				// so transparent windows can draw on top of it
+	{
+		blend		add		// so transparent windows can draw on top of it
+		cameraCubeMap	env/skytest
+		texgen		skybox
+		texgen			wobblesky .05 .05 .05
+	}
+}
+
+textures/sky/eclipse
+{
+	qer_editorimage textures/sky/eclipse_front
+	noFragment
+	noshadows
+	nooverlays
+	noimpact
+	forceOpaque				// so transparent windows can draw on top of it
+	{
+		blend		add		// so transparent windows can draw on top of it
+		cameraCubeMap	env/eclipse
+		texgen		skybox
+		//texgen			wobblesky .05 .05 .05
+	}
+}

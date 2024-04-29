@@ -1,0 +1,59 @@
+//============================================================
+//Flames
+//============================================================
+
+textures/particles/flame01
+{
+	qer_editorimage textures/particles/flame01
+	translucent
+	noShadows
+	nonsolid
+	sort 10
+{
+	blend add
+	map textures/particles/flame01
+	vertexColor
+}
+}
+
+textures/particles/flame02
+{
+	qer_editorimage textures/particles/flame02
+	translucent
+	noShadows
+	nonsolid
+	sort 10
+{
+	blend add
+	map textures/particles/flame02
+	vertexColor
+}
+}
+
+textures/particles/smoke01
+{
+	qer_editorimage textures/particles/smoke01
+	translucent
+	noShadows
+	nonsolid
+	sort o10
+{
+	blend add
+	map textures/particles/smoke01
+	vertexColor
+}
+}
+
+textures/particles/spark01
+{
+	qer_editorimage textures/particles/spark01
+	translucent
+	noShadows
+	nonsolid
+	sort 10
+{
+	blend add
+	map textures/particles/spark01
+	vertexColor
+}
+}

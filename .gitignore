@@ -12,6 +12,13 @@ neo/ipch
 imgui.ini
 
 Doom3BFG.exe
+base/guis/assets/
+base/lights/
+base/models/
+base/newfonts/
+base/swf/
+base/textures/
+base/ui/
 base/_common.crc
 base/_common.resources
 base/_ordered.crc

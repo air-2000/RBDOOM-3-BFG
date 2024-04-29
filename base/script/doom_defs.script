@@ -1,15 +1,11 @@
-/***********************************************************************
-
-doom_defs.script
-
-This defines some variables needed by the game script.
-
-***********************************************************************/
+/*
+==================================
+Variables used by the game script.
+==================================
+*/
 
 #ifndef __DOOM_DEFS__
 #define __DOOM_DEFS__
-
-
 
 #define GAME_FRAMETIME	( 1.0f / GAME_FPS )
 
@@ -51,13 +47,10 @@ This defines some variables needed by the game script.
 
 #define ALL_PARTICLES	-1		// used with setSmokeVisibility
 
-
-//
-// signals
-//
+//Signals.
 #define SIG_TOUCH			0	// object was touched
 #define SIG_USE				1	// object was used
-#define SIG_TRIGGER			2	// object was activated (generally by a trigger)
+#define SIG_TRIGGER			2	// object was activated
 #define SIG_REMOVED			3	// object was removed from the game
 #define SIG_DAMAGE			4	// object was damaged
 #define SIG_BLOCKED			5	// object was blocked
@@ -66,23 +59,19 @@ This defines some variables needed by the game script.
 #define SIG_MOVER_1TO2		8	// mover changing from position 1 to 2 (door opening)
 #define SIG_MOVER_2TO1		9	// mover changing from position 2 to 1 (door closing)
 
-// convenience signals for doors
+// Doors signals.
 #define SIG_DOOR_CLOSED		SIG_MOVER_POS1
 #define SIG_DOOR_OPEN		SIG_MOVER_POS2
 #define SIG_DOOR_OPENING	SIG_MOVER_1TO2
 #define SIG_DOOR_CLOSING	SIG_MOVER_2TO1
 
-//
-// buttons
-//
+// Buttons.
 #define BUTTON_ATTACK		1			// attack button pressed
 #define BUTTON_TALK			2			// when the player is talking or in the menus
 #define BUTTON_WALKING		16			// player is walking
-#define BUTTON_ANY			128			// any key whatsoever
+#define BUTTON_ANY			128			// any key
 
-//
-// Joint modifiers
-//
+// Joint modifiers.
 #define JOINTMOD_NONE			0	// no modification
 #define JOINTMOD_LOCAL			1	// modifies the joint's position or orientation in joint local space
 #define JOINTMOD_LOCAL_OVERRIDE	2	// sets the joint's position or orientation in joint local space
@@ -91,9 +80,7 @@ This defines some variables needed by the game script.
 
 #define BIT( num )					( 1 << ( num ) )
 
-//
-// shader parms
-//
+// Shader parms.
 #define SHADERPARM_RED				0
 #define SHADERPARM_GREEN			1
 #define SHADERPARM_BLUE				2
@@ -104,9 +91,7 @@ This defines some variables needed by the game script.
 #define SHADERPARM_MODE				7	// for selecting which shader passes to enable
 #define SHADERPARM_TIME_OF_DEATH	7	// for the monster skin-burn-away effect enable and time offset
 
-//
-// Contents flags	NOTE: make sure these are up to date with renderer/Material.h
-//
+// Contents flags( update accordingly to renderer/Material.h ).
 #define CONTENTS_SOLID					1		// an eye is never valid in a solid
 #define CONTENTS_OPAQUE					2		// blocks visibility (for ai)
 #define CONTENTS_WATER					4		// used for water
@@ -124,9 +109,7 @@ This defines some variables needed by the game script.
 #define CONTENTS_AAS_OBSTACLE			16384	// used to compile an obstacle into AAS that can be enabled/disabled
 #define CONTENTS_FLASHLIGHT_TRIGGER		32768	// used for triggers that are activated by the flashlight
 
-//
-// content masks
-//
+// Content masks.
 #define	MASK_ALL					(-1)
 #define	MASK_SOLID					(CONTENTS_SOLID)
 #define	MASK_MONSTERSOLID			(CONTENTS_SOLID|CONTENTS_MONSTERCLIP|CONTENTS_BODY)
@@ -137,9 +120,7 @@ This defines some variables needed by the game script.
 #define	MASK_SHOT_RENDERMODEL		(CONTENTS_SOLID|CONTENTS_RENDERMODEL)
 #define	MASK_SHOT_BOUNDINGBOX		(CONTENTS_SOLID|CONTENTS_BODY)
 
-//
-// sound channels
-//
+// Sound channels.
 #define SND_CHANNEL_ANY			0
 #define SND_CHANNEL_VOICE		1
 #define SND_CHANNEL_VOICE2		2
@@ -152,18 +133,14 @@ This defines some variables needed by the game script.
 #define SND_CHANNEL_PDA			9
 #define SND_CHANNEL_DEMONIC		10
 
-//
-// animation channels
-//
+// Animation channels.
 #define ANIMCHANNEL_ALL			0
 #define ANIMCHANNEL_TORSO		1
 #define	ANIMCHANNEL_LEGS		2
 #define	ANIMCHANNEL_HEAD		3
 #define	ANIMCHANNEL_EYELIDS		4
 
-//
-// projectile states
-//
+// Projectile states.
 #define PROJECTILE_SPAWNED		0
 #define PROJECTILE_CREATED		1
 #define PROJECTILE_LAUNCHED		2

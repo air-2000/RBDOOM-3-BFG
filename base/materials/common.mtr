@@ -1,0 +1,498 @@
+
+
+//GUI
+
+// Use this material for the interactive view screen and use
+// a "gui" key referencing appropriate gui file, like "guis/yourguifile.gui" on the entity.
+// A model-entity can only have 3 GUI screens
+
+textures/common/entityGui
+{
+	qer_editorimage	textures/common/entityGui.tga
+	discrete
+	playerclip
+	guiSurf	entity
+}
+
+
+textures/common/entityGui2
+{
+	qer_editorimage	textures/common/entityGui2.tga
+	discrete
+	playerclip
+	guiSurf	entity2
+}
+
+
+textures/common/entityGui3
+{
+	qer_editorimage	textures/common/entityGui3.tga
+	discrete
+	guiSurf	entity3
+	playerclip
+}
+
+
+//AAS
+
+textures/editor/aassolid
+{
+	qer_editorimage	textures/common/aassolid.tga
+	qer_nocarve	
+	nonsolid
+	noshadows
+	aassolid
+}
+
+
+textures/editor/aasobstacle
+{
+	qer_editorimage	textures/common/aasobstacle.tga
+	qer_nocarve	
+	nonsolid
+	noshadows
+	aasobstacle
+}
+
+
+//Triggers
+
+textures/common/trigger
+{
+	qer_editorimage textures/common/trigger.tga
+	qer_nocarve	
+	noshadows
+	trigger
+}
+
+
+textures/common/trigmulti
+{
+	qer_editorimage textures/common/trigmulti.tga
+	qer_nocarve	
+	noshadows
+	trigger
+}
+
+
+textures/common/trigonce
+{
+	qer_editorimage textures/common/trigonce.tga
+	qer_nocarve	
+	noshadows
+	trigger
+}
+
+
+textures/common/trigtimer
+{
+	qer_editorimage textures/common/trigtimer.tga
+	qer_nocarve	
+	noshadows
+	trigger
+}
+
+
+textures/common/trigrelay
+{
+	qer_editorimage textures/common/trigrelay.tga
+	qer_nocarve	
+	noshadows
+	trigger
+}
+
+
+textures/common/trighurt
+{
+	qer_editorimage textures/common/trighurt.tga
+	qer_nocarve	
+	noshadows
+	trigger
+}
+
+
+textures/common/trigfade
+{
+	qer_editorimage textures/common/trigfade.tga
+	qer_nocarve
+	noshadows
+	trigger
+}
+
+
+textures/common/triggui
+{
+	qer_editorimage textures/common/triggui.tga
+	qer_nocarve
+	noshadows
+	trigger
+}
+
+
+textures/common/trigair
+{
+	qer_editorimage textures/common/trigair.tga
+	qer_nocarve
+	noshadows
+	trigger
+}
+
+
+textures/common/trigentityname
+{
+	qer_editorimage textures/common/trigentityname.tga
+	qer_nocarve	
+	noshadows
+	trigger
+}
+
+
+textures/common/trigentityname_once
+{
+	qer_editorimage textures/common/trigentityname_once.tga
+	qer_nocarve
+	noshadows
+	trigger
+}
+
+
+textures/common/trigflashlight
+{
+	qer_editorimage textures/common/trigflashlight.tga
+	qer_nocarve
+	noshadows
+	flashlight_trigger
+}
+
+
+//Clips
+
+//Solid to players and enemies only
+textures/common/clip
+{
+	qer_editorimage textures/common/clip.tga
+	noimpact
+	nonsolid
+	monsterclip
+	playerclip
+	noshadows
+}
+
+
+//Solid to players, enemies and moveables objects
+textures/common/clip_plusmovables
+{
+	qer_editorimage textures/common/clipplus.tga
+	noimpact
+	nonsolid
+	monsterclip
+	playerclip
+	moveableclip 
+	noshadows
+}
+
+
+//Solid for all entities, including projectiles 
+textures/common/full_clip
+{
+	qer_editorimage textures/common/full_clip.tga
+	monsterclip
+	playerclip
+	moveableclip
+	noshadows
+}
+
+
+//Only solid for players
+textures/common/player_clip
+{
+	qer_editorimage textures/common/player_clip.tga
+	noimpact
+	nonsolid
+	playerclip
+	noshadows
+}
+
+
+//Only solid for enemies
+textures/common/monster_clip
+{
+	qer_editorimage textures/common/monster_clip.tga
+	nonsolid
+	monsterclip
+	noshadows
+}
+
+
+//Only solid for moveable objects
+textures/common/moveable_clip
+{
+	qer_editorimage textures/common/moveable_clip.tga
+	nonsolid
+	moveableclip
+	noshadows
+}
+
+
+//Only solid for IK collision testing (legs IK mostly)
+textures/common/ik_clip
+{
+	qer_editorimage textures/common/ikclip.tga
+	nonsolid
+	ikclip
+	noshadows
+}
+
+
+textures/common/moveableclipmodel
+{
+	qer_editorimage textures/common/clip.tga
+	noshadows
+}
+
+
+//Misc
+
+// Solid but never give falling damage :)
+textures/common/cushion
+{
+	qer_editorimage textures/common/cushion.tga
+	nonsolid
+	playerclip
+	nodamage
+	noshadows
+}
+
+
+// Brush slide effect
+textures/common/slick
+{
+	qer_editorimage textures/common/slick.tga
+	slick
+	noshadows
+}
+
+
+// Missiles dissapear when collide with this
+textures/common/noimpact
+{
+	qer_editorimage textures/common/noimpact.tga
+	noimpact
+	noshadows
+}
+
+
+//Mirror material 
+textures/common/mirror
+{
+	discrete
+	qer_editorimage textures/common/qer_mirror.tga
+	solid
+	mirror
+	{
+		blend add
+		map textures/common/qer_mirror.tga
+	}
+}
+
+
+textures/common/ladder
+{
+	qer_editorimage textures/common/ladder.tga
+	nonsolid
+	monsterclip
+	playerclip
+	noimpact
+	ladder
+	noshadows
+}
+
+
+textures/common/location
+{
+	qer_editorimage 	textures/common/location.tga
+	qer_nocarve
+	noshadows
+}
+
+
+textures/common/location_separator
+{
+	qer_editorimage 	textures/common/location_separator.tga
+	qer_nocarve
+	noshadows
+}
+
+
+textures/common/quest
+{
+	qer_editorimage 	textures/common/quest.tga
+	qer_nocarve
+	noshadows
+}
+
+
+textures/common/quest_complete
+{
+	qer_editorimage 	textures/common/quest_complete.tga
+	qer_nocarve
+	noshadows
+}
+
+
+textures/common/quest_primary
+{
+	qer_editorimage 	textures/common/quest_primary.tga
+	qer_nocarve
+	noshadows
+}
+
+
+textures/common/commstream
+{
+	qer_editorimage 	textures/common/commstream.tga
+	qer_nocarve
+	noshadows
+}
+
+
+textures/common/camera_view
+{
+	qer_editorimage 	textures/common/camera_view.tga
+	qer_nocarve
+	noshadows
+}
+
+
+textures/common/target_null
+{
+	qer_editorimage 	textures/common/target_null.tga
+	qer_nocarve
+	noshadows
+}
+
+
+textures/common/tip
+{
+	qer_editorimage 	textures/common/tip.tga
+	qer_nocarve
+	noshadows
+}
+
+
+textures/common/overdrawtest
+{
+    noselfShadow
+    noshadows	
+	translucent	               
+	{
+		blend	filter
+		map		textures/common/overdraw.tga
+	}
+}
+
+
+textures/common/water
+{
+	noselfShadow
+    noshadows	
+	translucent	
+	qer_nocarve
+	water
+	
+	qer_editorimage 	textures/common/water.tga
+}
+
+
+//Collision Mesh
+textures/common/collision
+{
+	qer_editorimage textures/common/collision.tga
+	noshadows
+	collision
+}
+
+
+//Speaker
+textures/common/speaker
+{
+	qer_editorimage textures/common/speaker.tga
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	noshadows
+}
+
+//Particle Emitter
+textures/common/particle
+{
+	qer_editorimage textures/common/particle.tga
+	qer_nocarve		// don't let an awry CSG operation cut it up
+	noshadows
+}
+
+
+//this is used during dmap development for some things
+invisible
+{
+	noshadows
+}
+
+textures/common/caulk
+{
+	qer_editorimage textures/common/caulk.tga
+	noshadows
+	forceOpaque
+}
+
+// surfaces with this material will not render in-game
+textures/common/nodraw
+{
+	qer_editorimage textures/common/nodraw.tga
+	nonsolid
+	noshadows
+}
+
+// surfaces with this material will not render in-game but they're still solid
+textures/common/nodrawsolid
+{
+	qer_editorimage textures/common/nodrawsolid.tga
+	noshadows
+}
+
+
+// Invisible Shadow 1
+textures/common/shadow
+{
+	qer_editorimage textures/common/shadow.tga
+	nonsolid
+	forceshadows
+}
+
+
+// Invisible Shadow 2
+textures/common/shadow2
+{
+	qer_editorimage textures/common/shadow.tga
+	nonsolid
+	forceshadows
+	noselfshadow
+}
+
+
+// visportal brushes stop the area flood fills in dmap and
+// define portals, separating the world into areas
+textures/common/visportal
+{
+	qer_editorimage	textures/common/visportal.tga
+	areaportal
+	noshadows
+}
+
+
+textures/common/nodrop
+{
+	qer_editorimage textures/common/nodrop.tga
+	qer_nocarve
+	nodrop
+	nonsolid
+	noshadows
+}
